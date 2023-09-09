@@ -4,10 +4,22 @@
 
 @layer components {
   .link {
-    @apply font-mono text-xl text-neutral-500 leading-5 hover:underline underline-offset-4 decoration-neutral-900 hover:text-neutral-700;
+    @apply font-mono mx-1 px-1 text-xl text-emerald-950 leading-5 rounded inHover_text inHover_border inHover_bg;
   }
 
   .link_active {
-    @apply border-b text-neutral-600 border-neutral-700;
+    @apply px-1 border-b shadow-lg shadow-emerald-300 rounded text-emerald-900 border-emerald-950;
+  }
+
+  .inHover_text {
+    @apply hover:text-emerald-400;
+  }
+
+  .inHover_border {
+    @apply hover:border-x-2 hover:border-b-2 hover:border-emerald-950;
+  }
+
+  .inHover_bg {
+    @apply hover:bg-zinc-500;
   }
 }
