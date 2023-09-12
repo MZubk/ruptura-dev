@@ -11,6 +11,10 @@ export default function Post() {
     return post.id === Number(parameter.id);
   });
 
+  if (!post) {
+    return <h1 className="title h-screen">Post não encontrado...</h1>;
+  }
+
   return (
     <ModelPost
       coverPhoto={`/assets/posts/${post.id}/capa.png`}

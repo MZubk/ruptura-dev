@@ -9,6 +9,7 @@ import DefaultPage from "./components/DefaultPage";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
+import NotFound from "./pages/NotFound";
 
 export default function AppRoutes() {
   return (
@@ -21,7 +22,7 @@ export default function AppRoutes() {
           <Route path="posts/:id" element={<Post />} />
         </Route>
 
-        <Route path="*" element={<div>Pagina não encontrada</div>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
