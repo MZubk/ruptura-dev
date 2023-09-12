@@ -1,4 +1,4 @@
-import icon from "/public/favicon.png";
+import icon from "/public/favicon.svg";
 
 export default function Footer() {
   return (

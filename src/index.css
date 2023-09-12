@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a,
+  button,
+  input,
+  textarea {
+    @apply text-inherit;
+  }
+
+  button {
+    @apply bg-transparent;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold leading-10;
+  }
+}
+
 @layer components {
   .link {
     @apply font-mono mx-1 px-1 text-xl text-emerald-950 leading-5 rounded inHover_text inHover_border inHover_bg;
@@ -20,6 +39,18 @@
   }
 
   .inHover_bg {
-    @apply hover:bg-zinc-500;
+    @apply hover:bg-gray-500;
+  }
+
+  .title {
+    @apply font-bold text-7xl h-56 px-28 py-0 flex items-center;
+  }
+
+  .subtitle {
+    @apply mb-8 text-2xl font-bold;
+  }
+
+  .paragraph {
+    @apply text-justify text-base leading-6 mb-6;
   }
 }
