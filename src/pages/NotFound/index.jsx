@@ -20,7 +20,7 @@ export default function NotFound() {
               Aguarde uns instantes e recarregue a página, ou volte para a
               página inicial.
             </p>
-            <div className="text-start mt-14 pb-8" onClick={() => navigate(-1)}>
+            <div className="text-start m-14 p-8" onClick={() => navigate(-1)}>
               <DefaultButton>Voltar</DefaultButton>
             </div>
           </div>

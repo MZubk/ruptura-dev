@@ -23,23 +23,23 @@
 
 @layer components {
   .link {
-    @apply font-mono mx-1 px-1 text-xl text-emerald-950 leading-5 rounded inHover_text inHover_border inHover_bg;
+    @apply font-mono mx-1 px-1 text-xl text-slate-900 leading-5 rounded inHover_text inHover_border inHover_bg;
   }
 
   .link_active {
-    @apply px-1 border-b shadow-lg shadow-emerald-300 rounded text-emerald-900 border-emerald-950;
+    @apply px-1 border-b border-x shadow-lg shadow-blue-600 rounded text-cyan-900 border-teal-950;
   }
 
   .inHover_text {
-    @apply hover:text-emerald-400;
+    @apply hover:text-sky-300;
   }
 
   .inHover_border {
-    @apply hover:border-x-2 hover:border-b-2 hover:border-emerald-600;
+    @apply hover:border-x-2 hover:border-b-2 hover:border-slate-500;
   }
 
   .inHover_bg {
-    @apply hover:bg-slate-800;
+    @apply hover:bg-gradient-to-b from-slate-700 from-30% to-slate-900;
   }
 
   .title {
