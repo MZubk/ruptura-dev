@@ -35,11 +35,11 @@
   }
 
   .inHover_border {
-    @apply hover:border-x-2 hover:border-b-2 hover:border-emerald-950;
+    @apply hover:border-x-2 hover:border-b-2 hover:border-emerald-600;
   }
 
   .inHover_bg {
-    @apply hover:bg-gray-500;
+    @apply hover:bg-slate-800;
   }
 
   .title {

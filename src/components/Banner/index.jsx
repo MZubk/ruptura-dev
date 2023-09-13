@@ -13,7 +13,7 @@ export default function Banner() {
       </div>
       <div className="col-span-1 relative">
         <img
-          className="absolute w-40 bottom-0 right-0 p-1 border-x-4 border-b-4 border-zinc-800 rounded-full shadow-lg shadow-emerald-300"
+          className="absolute w-40 bottom-0 right-0 p-1 border-x-4 border-b-4 border-emerald-800 rounded-full shadow-lg shadow-emerald-300"
           src={logo}
           alt="Logo do Ruptura"
         />

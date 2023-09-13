@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import DefaultButton from "../DefaultButton";
 
 export default function PostCard({ post }) {
   return (
@@ -10,9 +11,7 @@ export default function PostCard({ post }) {
           alt="Imagem de capa do post"
         />
         <h2 className="text-xl text-blue-500 my-6">{post.titulo}</h2>
-        <button className="text-xl text-slate-50 inline-block py-1 px-4 bg-slate-500 rounded-md inHover_text inHover_border">
-          Ler
-        </button>
+        <DefaultButton>Ler</DefaultButton>
       </div>
     </Link>
   );
