@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import DefaultPage from "./components/DefaultPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 //pages
 import About from "./pages/About";
@@ -14,6 +15,7 @@ import NotFound from "./pages/NotFound";
 export default function AppRoutes() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />
       <Routes>
         <Route path="/" element={<DefaultPage />}>

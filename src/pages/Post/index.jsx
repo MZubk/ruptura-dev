@@ -5,7 +5,8 @@ import NotFound from "../NotFound";
 
 import posts from "json/posts.json";
 import "./post.css";
-import DefaultPage from "../../components/DefaultPage";
+import DefaultPage from "components/DefaultPage";
+import PostCard from "../../components/PostCard";
 
 export default function Post() {
   const parameter = useParams();
@@ -17,6 +18,11 @@ export default function Post() {
   if (!post) {
     return <NotFound />;
   }
+
+  const featuredPosts = posts
+    .filter((post) => post.id !== Number(parameter.id))
+    .sort((a, b) => b.id - a.id)
+    .slice(0, 4);
 
   return (
     <Routes>
@@ -30,6 +36,18 @@ export default function Post() {
             >
               <div className="post-markdown-container">
                 <ReactMarkdown>{post.texto}</ReactMarkdown>
+              </div>
+              <div>
+                <h3 className="pt-4 pb-8 text-4xl">
+                  Você também pode gostar...
+                </h3>
+                <ul className="flex gap-6 justify-center flex-wrap">
+                  {featuredPosts.map((post) => (
+                    <li key={post.id}>
+                      <PostCard post={post} />
+                    </li>
+                  ))}
+                </ul>
               </div>
             </ModelPost>
           }

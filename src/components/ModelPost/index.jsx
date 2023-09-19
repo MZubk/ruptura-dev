@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import DefaultButton from "../DefaultButton";
 import BtnScrollToUp from "../BtnScrollToUp";
+import FeaturedPosts from "../FeaturedPosts";
 
 export default function ModelPost({ coverPhoto, title, children }) {
   const navigate = useNavigate();
