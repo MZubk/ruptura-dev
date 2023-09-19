@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import DefaultButton from "../DefaultButton";
+import BtnScrollToUp from "../BtnScrollToUp";
 
 export default function ModelPost({ coverPhoto, title, children }) {
   const navigate = useNavigate();
@@ -16,8 +17,11 @@ export default function ModelPost({ coverPhoto, title, children }) {
 
         <div className="px-28 py-10">{children}</div>
       </article>
-      <div className="text-start m-14 p-8" onClick={() => navigate(-1)}>
-        <DefaultButton>Voltar</DefaultButton>
+      <div className="p-8 w-fit">
+        <DefaultButton onClick={() => navigate(-1)}>Voltar</DefaultButton>
+      </div>
+      <div>
+        <BtnScrollToUp />
       </div>
     </>
   );

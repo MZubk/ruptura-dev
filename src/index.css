@@ -22,16 +22,18 @@
 }
 
 @layer components {
-  .link {
-    @apply font-mono mx-1 px-1 text-xl text-slate-900 leading-5 rounded inHover_text inHover_border inHover_bg;
+  .menu_text {
+    @apply font-mono mx-1 px-1 text-xl text-slate-300 leading-5 rounded inHover_text inHover_border inHover_bg
   }
 
-  .link_active {
-    @apply px-1 border-b border-x shadow-lg shadow-blue-600 rounded text-cyan-900 border-teal-950;
+  .menu_text_active{
+    @apply text-slate-900 border-b-2 border-x border-slate-900 leading-5 rounded shadow_default
   }
+
+  /* in hover */
 
   .inHover_text {
-    @apply hover:text-sky-300;
+    @apply hover:text-blue-400;
   }
 
   .inHover_border {
@@ -40,6 +42,12 @@
 
   .inHover_bg {
     @apply hover:bg-gradient-to-b from-slate-700 from-30% to-slate-900;
+  }
+
+  /* shadow */
+
+  .shadow_default {
+    @apply shadow-lg shadow-blue-400
   }
 
   .title {
