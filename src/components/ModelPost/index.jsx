@@ -10,8 +10,11 @@ export default function ModelPost({ coverPhoto, title, children }) {
     <>
       <article className="relative text-slate-900">
         <div
-          className="h-56 w-full bg-cover bg-no-repeat opacity-30 absolute top-0 -z-1"
-          style={{ backgroundImage: `url(${coverPhoto})` }}
+          className="h-64 w-full bg-cover bg-no-repeat opacity-30 absolute top-0 z-1"
+          style={{
+            backgroundImage: `url(${coverPhoto})`,
+            backgroundPosition: "center",
+          }}
         ></div>
 
         <h2 className="title">{title}</h2>
